@@ -1,15 +1,32 @@
-.content{
-	margin: 0 auto;
-	width: 450px;
-	text-align: center;
-	font-size: 18px;
-}
-.photo{
-	display: block;
-	margin: 0 auto;
+body{
+	background: #F1F1F1;
+	font-size: 16px;
 }
 
-.content div{
-	margin: 10px;
-	text-align: left;
+.bord{
+	border-top: 1.5px solid grey;
+}
+
+.content{
+	margin: 0 auto;
+	width: 400px;
+	padding: 10px 30px;
+	background: white;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+img{
+	width: 140px;
+}
+
+.photo,h2{
+	text-align: center;
+}
+
+p,ul{
+	margin-left: 10px;
+}
+
+span{
+	display: block;
 }
