@@ -22,8 +22,6 @@ body{
 }
 .menu{
 	margin-top: 20px;
-	position: relative;
-	overflow: hidden;
 	background: #5e5e5e; /* Old browsers */
 	background: -moz-linear-gradient(top, #5e5e5e 0%, #444343 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e5e5e), color-stop(100%,#444343)); /* Chrome,Safari4+ */
@@ -61,11 +59,13 @@ body{
 .sidebar{
 	float:left;
 	width: 240px;
+	}
+.side-menu{
+list-style: none;
 }
 .side-menu a{
 	text-decoration: none;
 	line-height: 40px;
-	
 	padding-left: 24px;
 	font-size: 15px;
 	color: #656363;
@@ -78,7 +78,6 @@ body{
 	color: #2c2c2c;
 }
 .side-menu li{
-
 	border-right: 1px solid #c8c8c8;
 	border-left: 1px solid #c8c8c8;
 	border-bottom: 1px solid #c8c8c8;
@@ -105,28 +104,21 @@ body{
 }
 .content{
 	margin-top: 40px;
-	position: relative;
-	overflow: hidden;
-}
+	}
 .footer{
 	background-color: #e1e1e1;
 	line-height: 40px;
+	font-size: 13px;
 
 }
-.footer-menu{
-	position: relative;
-	overflow: hidden;
 
-}
 .footer .footer-menu li{
 	list-style: none;
 	float: left;
-	font-size: 13px;
+	
 	padding: 0 40px;
 }
-.footer-menu li:last-child{
-	float: right;
-}
+
 .footer-menu a{
 	display: block;
 	color: #2c2c2c;
@@ -135,4 +127,13 @@ body{
 .footer-menu a:hover{
 	display: block;
 	text-decoration: underline;
+}
+.copyright{
+	float: right;
+	margin-right: 25px;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
 }
