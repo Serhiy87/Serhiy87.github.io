@@ -1,0 +1,204 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background: url("../img/background.jpg");
+}
+.wrapper{
+	width: 1000px;
+	background-color: #ffffff;
+	overflow: hidden;
+	margin:0 auto;
+	-webkit-box-shadow: 0px 3px 17px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 17px 2px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 17px 2px rgba(0,0,0,0.75);
+}
+.header{
+	padding-top: 5px;
+}
+.logo{
+	float: left;
+	margin-top: 5px;
+	margin-left: 30px;
+	line-height: 0;
+	
+}
+.contacts{
+	font-style: tahoma;
+	font-size: 12px;
+	float:right;
+	list-style: none;
+	color: #128aa7;
+	line-height: 18px;
+}
+.contacts li:first-child{
+	font-weight:bold;
+	line-height: 22px;
+}
+.countries-menu{
+	clear: both;
+	list-style: none;
+	float: right;
+	font-style: tahoma;
+	font-size: 10px;
+	margin-top: 20px;
+	
+
+}
+.countries-menu li{
+	float:left;
+	
+	text-align: center;
+}
+.countries-menu li a{
+	color: #128aa7;
+}
+.countryflag{
+	width: 60px;
+}
+.header-right-site{
+	float: right;
+	margin-right: 33px;
+}
+.picture {
+	border-bottom: 1px solid #128aa7;
+	line-height: 0;
+	clear: both;
+}
+
+.menu {
+	padding-left: 50px;
+	list-style: none;
+	font-family: tahoma;
+	text-align: center;
+	background-color: white;
+	background: green;
+	border-top: 1px solid #cacbcb;
+	background: #373737; /* Old browsers */
+	background: -moz-linear-gradient(top, #373737 0%, #303030 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#373737), color-stop(100%,#303030)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #373737 0%,#303030 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #373737 0%,#303030 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #373737 0%,#303030 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #373737 0%,#303030 100%); /* W3C */
+	border-bottom: 1px solid black;
+	font-size: 12px;
+	color: white;
+-webkit-box-shadow: 0px 8px 8px 54px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 8px 54px rgba(0,0,0,0.75);
+box-shadow: 0px 8px 8px 54px rgba(0,0,0,0.75);
+
+}
+.menu  li{
+	float: left;
+	margin-right:50px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	padding: 0 5px;
+	line-height: 30px;
+
+}
+.menu li ul{
+	display: none;
+	position: absolute;
+	left:0;
+	top: 30px;
+	margin: 0;
+	width: 150px;
+	background:#303030;
+	-webkit-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.75);
+
+	
+}
+.menu li ul li{
+	float: none;
+	display: block;
+	
+}
+.menu  a{
+	color: white;
+	text-decoration: none;
+	line-height: 24px;
+}
+.menu  li:hover ul{
+	display: block;
+}
+.clearfix:after{
+	content: '';
+	clear: both;
+	display: block;
+}
+
+/*CONTENT*/
+.content{
+	position: relative;
+	font-family: tahoma;
+	font-size: 12px;
+}
+.fon1 {  /* фон для левой колонки (синий) */
+	width: 100%;
+	background: #edeef0;
+	float: left; /* делаем все обертки плавающими блоками чтобы избежать добавления блока с clear: both; */
+	position: relative; /* чтобы иметь возможность сместить фон */
+	right: 58%; /* обнажаем красный фон для центральной колонки. 58% - ширина центральной колонки */
+}
+
+.fon2 {/* фон для центральной колонки (красный) */
+	width: 100%;
+	background: white;
+	float: left;
+	position: relative;
+	right: 21%; /* обнажаем желтый фон для правой колонки. 21% - ширина правой колонки */
+}
+
+.fon3 {/* фон для правой колонки (желтый) */
+	width: 100%;
+	background: #edeef0;
+	float: left;
+}
+
+.leftColumn {
+	border-right: 1px solid #c7cacf;
+	line-height: 25px;
+	width: 176px;
+	float: left;
+	overflow: hidden; /* страховка от ломки верстки объектами шире размера колонки-родителя */
+	position:relative;
+	padding:5px 17px;
+	left:79%; /* возвращаем колонки с контентом на свои позиции. 79% - сумма смещений оберток fon1 и fon2 */
+}
+.leftColumn h3, .rightColumn h3{
+	text-align: center;
+}
+
+.centerColumn {
+	width: 58%;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	left:79%;
+}
+
+.rightColumn {
+	width: 17%;
+	float: left;
+	overflow: hidden;
+	position:relative;
+	left:79%;
+	border-left: 1px solid #c7cacf;
+	padding:5px 17px;
+	line-height: 25px;
+
+}
+
+.copyright{
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	font-family: tahoma;
+	line-height: 30px;
+}
