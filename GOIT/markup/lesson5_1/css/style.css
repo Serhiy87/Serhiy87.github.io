@@ -1,0 +1,23 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+table{margin: 0 auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+td{
+	border: 1px solid black;
+}
+.yellow{
+	background: yellow;
+}
+.red{
+	background: red;
+}
+.black{
+	background: black;
+}
+.blue{
+	background: blue;
+}
