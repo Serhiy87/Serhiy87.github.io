@@ -28,6 +28,14 @@ span:first-child{
 	margin-top: 5px;
 	margin-left: 30px;
 	line-height: 0;
+	background: url("../img/logo.png");
+	width:230px;
+	height: 60px;
+	font-family: tahoma;
+	padding-top: 103px;
+	padding-left: 50px;
+	color: #128aa7;
+	font-size: 12px;
 }
 .contacts{
 	font-style: tahoma;
@@ -119,6 +127,10 @@ box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.75);
 
 	
 }
+.triangle{
+	margin-left:5px; 
+}
+
 .menu li ul li{
 	float: none;
 	display: block;
