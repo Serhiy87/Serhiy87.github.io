@@ -93,10 +93,12 @@ background: -webkit-linear-gradient(top, #51b1dc 0%,#2e7ac4 100%); /* Chrome10-2
 background: linear-gradient(to bottom, #51b1dc 0%,#2e7ac4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .ofertas::before{
-	display: block;
+	line-height: 100%;
 	float: left;
 	margin-top: 5px;
+	margin-bottom: 0px;
 	margin-right: 5px;
+	padding:0px;
 	content: url("../img/icon_flag.png");
 }
 .gradient a{
@@ -212,7 +214,7 @@ input[type="checkbox"]{
 	margin-top: 3px;
 	margin-right: 6px;
 }
-input[type="submit"]{
+input[type="sub"]{
 	margin-top: 17px;
 	margin-left: 73px;
 	height: 35px;
