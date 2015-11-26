@@ -12,8 +12,8 @@
 <div class="header_main">
 	<div class="header clearfix">
 		<ul class="right-menu">
-				<li><a class="block" href="#">
-				<img src="img\icon_flag.png" class="flag_image"  alt="flag">Minhas Ofertas</a></li>
+				<li><a class="block ofertas" href="#">
+				<!-- <img src="img\icon_flag.png" class="flag_image"  alt="flag"> -->Minhas Ofertas</a></li>
 				<li class="gradient" >
 					
 						Ola! <a  href="#">Entrar</a> ou <a  href="#">Cadastre-se</a>
@@ -37,21 +37,21 @@
 			Cadastre-se
 		</div>
 		<div class="content-body">
-		<div>
-			 	<button class="FB"><span class="F">f</span><span class="bold">Log In</span> with <span class="bold">Facebook</span></span><span class="left_arrow">></span></button>
+		<div class="facebook">
+			 	<button class="FB" onclick="location.href='http://facebook.com'"><span class="F">f</span><span class="bold">Log In</span> with <span class="bold">Facebook</span></span><span class="left_arrow">></span></button>
 			 </div>
 		<!-- <a href="#" class="facebook"><img src="img\facebook.png" alt="facebook"></a> -->
-			<form class="clearfix" action="#">
+			<form class="clearfix" action="" method="GET">
 			
 			<div class="decor"><div class="decor_name">OU</div></div>
 			
-				<input class="textinput" type="text" placeholder="First Name " form="signup" required>
-				<input class="textinput" type="text" placeholder="Last Name " form="signup" required>
-				<input class="textinput" type="Email" placeholder="Email Address " form="signup" required>
-				<input class="textinput" type="Password" placeholder="Choose Password">
-				<input class="textinput" type="Password" placeholder="Password Confirm">
+				<input class="textinput" name="first_name" type="text" placeholder="First Name "  required>
+				<input class="textinput" name="last_name" type="text" placeholder="Last Name "  required>
+				<input class="textinput" name="email" type="Email" placeholder="Email Address "  required>
+				<input class="textinput" type="Password" placeholder="Choose Password"   required>
+				<input class="textinput" type="Password" placeholder="Password Confirm"   required>
 				<input type="checkbox">Send me Youbike updates and tips
-				<input type="button" value="Create my Account">
+				<input type="submit" value="Create my Account">
 				<!-- <div class="clear"></div> -->
 				<div class="Policy">By clicking the button above, you agree to thr Terms of Service Xiew our Privacy Policy</div>
 			</form>
