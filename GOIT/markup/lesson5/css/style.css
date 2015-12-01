@@ -123,9 +123,7 @@ background: linear-gradient(to bottom, #51b1dc 0%,#2e7ac4 100%); /* W3C, IE10+, 
 /*CONTENT*/
 .content{
 	width: 560px;
-	
-	
-	margin:200px auto 0 auto;
+	margin:200px auto;
 }
 
 .content-head{
