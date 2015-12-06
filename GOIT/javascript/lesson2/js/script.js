@@ -1,23 +1,18 @@
-function pow(x,y){
-	if(y===0)
-	{
-		return 1;
-	}
-	else{
-			var result=1;
-		  	for (var i = 0; i<Math.abs(y); i++) 
-		  	{
-		  		result*=x;
-		  	}
-		  	if(y<0)
-		  	{
-		  		result=1/result;
-		  	}
-		  	return result;
-		}
-  }
+var namesMas=[];
 
-var x=+prompt("Enter x");
-var y=+prompt("Enter y");
-  
-console.log("Result:"+pow(x,y));
+for(var i=0;i<5;i++){
+	namesMas[i]=prompt('Введите имя '+(i+1));
+}
+
+var userName=prompt('Введите свое имя');
+var flag=false;
+for(var i=0;i<userName.length;i++){
+	if(namesMas[i]===userName){
+		alert(userName+", Вы успешно вошли.");
+		flag=true;
+		break;
+	}
+}
+if(flag===false){
+	alert("Ошибка!");
+}
