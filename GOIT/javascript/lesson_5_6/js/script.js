@@ -90,7 +90,7 @@ startButtonListener=function(){
 }
 
 stopButtonListener=function(){
-    timer.status=0;
+    timer.timerStatus=0;
     timer.millis=0;
     timer.seconds=0;
     timer.minutes=0;
