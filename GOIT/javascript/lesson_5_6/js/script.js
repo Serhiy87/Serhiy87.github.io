@@ -11,7 +11,7 @@ var timer={
 
         timer.millis++;
 		timer.displayTime();
-        if(timer.millis==1000)
+        if(timer.millis==50)
         {
 
             timer.millis=0;
@@ -60,25 +60,25 @@ var timer={
             secondsC="0"+timer.seconds;
         }
 		
-		if(timer.millis>100)
+		if(timer.millis*20>=100)
 		{
-			millisC=timer.millis;
+			millisC=timer.millis*20;
 			}
 			else{
-					if(timer.millis>10)
+					if(timer.millis*20>=10)
 					{
-						millisC="0"+timer.millis;
+						millisC="0"+timer.millis*20;
 						}
 						
 						else
 						{
-							millisC="00"+timer.millis;
+							millisC="00"+timer.millis*20;
 							}
 				}
 		
 		
 
-        var str=""+hoursC+":"+minutesC+":"+secondsC+":"+millisC;
+        var str=""+hoursC+":"+minutesC+":"+secondsC+":"+(millisC);
         timer.display.innerHTML=str;
     }
 
@@ -95,7 +95,7 @@ startButtonListener=function(){
     {
         timer.timerStatus=1;
 
-        timer.timerID=setInterval(timer.runTimer,1);
+        timer.timerID=setInterval(timer.runTimer,20);
         startButton.innerHTML='<h1>Pause</h1>';}
     else {
         if(this.timerStatus=1)
