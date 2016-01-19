@@ -15,6 +15,16 @@ var app={
 			}
 			elem.innerHTML=params.content;
 		}
+		addQuestions:function(amount){
+			for(var i;i<amount;i++)
+			{
+				this.createElement({
+								   tagName:"h2",
+								   content:"Вопрос №",
+								   parentElement:body
+								   });
+				}
+			}
 }
 body=document.querySelector('body');
 app.createElement({
@@ -30,3 +40,5 @@ app.createElement({
 	content:"Проверить мои результаты",
 	inputType:"submit"
 });
+
+app.addQuestions(5);

@@ -10,7 +10,8 @@ var timer={
     runTimer:function(){
 
         timer.millis++;
-        if(timer.millis==10)
+		timer.displayTime();
+        if(timer.millis==1000)
         {
 
             timer.millis=0;
@@ -34,6 +35,7 @@ var timer={
         var hoursC;
         var minutesC;
         var secondsC;
+		var millisC;
         if(timer.hours>9)
         {
             hoursC=timer.hours;
@@ -57,8 +59,26 @@ var timer={
         else{
             secondsC="0"+timer.seconds;
         }
+		
+		if(timer.millis>100)
+		{
+			millisC=timer.millis;
+			}
+			else{
+					if(timer.millis>10)
+					{
+						millisC="0"+timer.millis;
+						}
+						
+						else
+						{
+							millisC="00"+timer.millis;
+							}
+				}
+		
+		
 
-        var str=""+hoursC+":"+minutesC+":"+secondsC;
+        var str=""+hoursC+":"+minutesC+":"+secondsC+":"+millisC;
         timer.display.innerHTML=str;
     }
 
@@ -67,6 +87,7 @@ var timer={
 
 }
 var timer;
+timer.displayTime();
 startButtonListener=function(){
     var startButton=document.querySelector(".startButton");
 
@@ -74,7 +95,7 @@ startButtonListener=function(){
     {
         timer.timerStatus=1;
 
-        timer.timerID=setInterval(timer.runTimer,100);
+        timer.timerID=setInterval(timer.runTimer,1);
         startButton.innerHTML='<h1>Pause</h1>';}
     else {
         if(this.timerStatus=1)
